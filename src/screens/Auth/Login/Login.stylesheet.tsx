@@ -10,7 +10,7 @@ export const useStyles = () => {
       justifyContent: 'center',
       alignItems: 'center',
       padding: 20,
-      backgroundColor: '#F9FAFB',
+      backgroundColor: '#A020F0      ',
     },
   });
 };

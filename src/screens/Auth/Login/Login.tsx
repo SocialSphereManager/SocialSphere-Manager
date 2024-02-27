@@ -2,7 +2,7 @@ import {useStyles} from './Login.stylesheet';
 import {ScrollView, Text, View, SafeAreaView} from 'react-native';
 import React from 'react';
 import {StackNavigationProp} from '@react-navigation/stack';
-import {RootStackParamList} from '../../../navigation/navigationManager';
+import {RootStackParamList} from '../../../navigation/navigation';
 
 type LoginScreenProps = {
   navigation: StackNavigationProp<RootStackParamList, 'Login'> | undefined;

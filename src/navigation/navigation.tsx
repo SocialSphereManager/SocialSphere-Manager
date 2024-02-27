@@ -3,6 +3,7 @@ import Login from '../screens/Auth/Login';
 import Registration from '../screens/Auth/Registration';
 import CalendarPage from '../screens/CalendarPage';
 import SocialsPage from '../screens/SocialsPage';
+import PersonalityPage from '../screens/PersonalityPage';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -10,6 +11,7 @@ export type RootStackParamList = {
   Registration: undefined;
   CalendarPage: undefined;
   SocialsPage: undefined;
+  PersonalityPage: undefined;
 };
 export const stackroutes = [
   {
@@ -43,6 +45,13 @@ export const stackroutes = [
   {
     title: 'SocialsPage',
     component: SocialsPage,
+    options: {
+      gestureEnabled: false,
+    },
+  },
+  {
+    title: 'PersonalityPage',
+    component: PersonalityPage,
     options: {
       gestureEnabled: false,
     },

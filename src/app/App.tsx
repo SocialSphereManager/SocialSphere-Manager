@@ -1,9 +1,10 @@
 import React, {Text, View} from 'react-native';
+import NavigationManager from '../navigation/navigationManager';
 
 const App = () => {
   return (
     <View>
-      <Text>Welcome to SocialSphere Manager</Text>
+      <NavigationManager />
     </View>
   );
 };
