@@ -5,7 +5,7 @@ import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from '../../navigation/navigation';
 
 type HomeScreenProps = {
-  navigation: StackNavigationProp<RootStackParamList, 'Home'> | undefined;
+  navigation: StackNavigationProp<RootStackParamList, 'Home'>;
 };
 
 const HomeScreen: FC<HomeScreenProps> = ({navigation}) => {

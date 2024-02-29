@@ -20,6 +20,7 @@ export const stackRoutes = [
     component: Home,
     options: {
       gestureEnabled: false,
+      headerShown: false,
     },
   },
   {
@@ -27,6 +28,7 @@ export const stackRoutes = [
     component: Login,
     options: {
       gestureEnabled: false,
+      headerShown: false,
     },
   },
   {
@@ -34,6 +36,7 @@ export const stackRoutes = [
     component: Registration,
     options: {
       gestureEnabled: false,
+      headerShown: false,
     },
   },
   {
@@ -41,6 +44,7 @@ export const stackRoutes = [
     component: CalendarPage,
     options: {
       gestureEnabled: false,
+      headerShown: false,
     },
   },
   {
@@ -48,6 +52,7 @@ export const stackRoutes = [
     component: SocialsPage,
     options: {
       gestureEnabled: false,
+      headerShown: false,
     },
   },
   {
@@ -55,6 +60,7 @@ export const stackRoutes = [
     component: PersonalityPage,
     options: {
       gestureEnabled: false,
+      headerShown: false,
     },
   },
 ];

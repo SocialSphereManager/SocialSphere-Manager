@@ -5,9 +5,7 @@ import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from '../../../navigation/navigation';
 
 type RegistrationScreenProps = {
-  navigation:
-    | StackNavigationProp<RootStackParamList, 'Registration'>
-    | undefined;
+  navigation: StackNavigationProp<RootStackParamList, 'Registration'>;
 };
 
 const RegistrationScreen: FC<RegistrationScreenProps> = ({navigation}) => {
