@@ -1,6 +1,6 @@
 import {useStyles} from './SocialsPage.stylesheet';
 import {ScrollView, Text, View, SafeAreaView} from 'react-native';
-import React from 'react';
+import React, {FC} from 'react';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from '../../navigation/navigation';
 
@@ -10,7 +10,7 @@ type SocialsPageScreenProps = {
     | undefined;
 };
 
-const SocialsPageScreen: React.FC<SocialsPageScreenProps> = ({navigation}) => {
+const SocialsPageScreen: FC<SocialsPageScreenProps> = ({navigation}) => {
   const styles = useStyles();
 
   return (

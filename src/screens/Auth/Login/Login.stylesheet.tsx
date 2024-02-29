@@ -6,11 +6,10 @@ export const useStyles = () => {
 
   return StyleSheet.create({
     container: {
-      flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
       padding: 20,
-      backgroundColor: '#A020F0      ',
+      backgroundColor: '#F9FAFB',
     },
   });
 };

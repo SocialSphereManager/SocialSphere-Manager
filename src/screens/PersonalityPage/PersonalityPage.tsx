@@ -1,6 +1,6 @@
 import {useStyles} from './PersonalityPage.stylesheet';
 import {ScrollView, Text, View, SafeAreaView} from 'react-native';
-import React from 'react';
+import React, {FC} from 'react';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from '../../navigation/navigation';
 
@@ -10,7 +10,7 @@ type PersonalityPageScreenProps = {
     | undefined;
 };
 
-const PersonalityPageScreen: React.FC<PersonalityPageScreenProps> = ({
+const PersonalityPageScreen: FC<PersonalityPageScreenProps> = ({
   navigation,
 }) => {
   const styles = useStyles();

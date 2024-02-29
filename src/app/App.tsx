@@ -1,12 +1,8 @@
-import React, {Text, View} from 'react-native';
+import React from 'react-native';
 import NavigationManager from '../navigation/navigationManager';
 
 const App = () => {
-  return (
-    <View>
-      <NavigationManager />
-    </View>
-  );
+  return <NavigationManager />;
 };
 
 export default App;

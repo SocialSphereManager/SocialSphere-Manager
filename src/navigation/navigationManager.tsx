@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {createStackNavigator} from '@react-navigation/stack';
 import {NavigationContainer} from '@react-navigation/native';
-import {stackroutes} from './navigation'; // Assuming LoginScreen is defined there
+import {stackRoutes} from './navigation'; // Assuming LoginScreen is defined there
 
 const NavigationManager = () => {
   const Stack = createStackNavigator();
@@ -9,7 +9,7 @@ const NavigationManager = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-        {stackroutes.map((route, key) => (
+        {stackRoutes.map((route, key) => (
           <Stack.Screen
             key={key}
             name={route.title}

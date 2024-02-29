@@ -4,6 +4,7 @@ import Registration from '../screens/Auth/Registration';
 import CalendarPage from '../screens/CalendarPage';
 import SocialsPage from '../screens/SocialsPage';
 import PersonalityPage from '../screens/PersonalityPage';
+import {IStack} from '../shared/interfaces/navigation';
 
 export type RootStackParamList = {
   Home: undefined;
@@ -13,7 +14,7 @@ export type RootStackParamList = {
   SocialsPage: undefined;
   PersonalityPage: undefined;
 };
-export const stackroutes = [
+export const stackRoutes = [
   {
     title: 'Home',
     component: Home,
