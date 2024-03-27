@@ -1,0 +1,49 @@
+import { useStyles } from './{{pascalCase name}}.stylesheet';
+import formStyle from '../../../shared/styling/forms.stylesheet';
+import {ScrollView, Text, TouchableOpacity, View, SafeAreaView} from 'react-native';
+import {useEffect, useState, FC} from 'react';
+import {StackNavigationProp} from '@react-navigation/stack';
+import {RootStackParamList} from '../../../navigation/navigation';
+import {Icons} from 'libs/Icons';
+import Message from '../../../components/Message';
+
+type {{pascalCase name}}ScreenProps = {
+  navigation:
+  | StackNavigationProp<RootStackParamList, '{{pascalCase name}}'>
+  | undefined;
+};
+
+interface NotificationProps {
+text: string;
+messageType: MessageType;
+}
+type MessageType = 'error' | 'success';
+
+const {{pascalCase name}}Screen: FC<{{pascalCase name}}ScreenProps> = ({navigation}) => {
+    const styles = useStyles();
+    const [notification, setNotification] = useState<NotificationProps | null>();
+    const [loading, setLoading] = useState(false);
+
+    return (
+    <SafeAreaView>
+    <ScrollView contentContainerStyle={styles.container}>
+      <View style={styles.container}>
+        <Text>this is {{pascalCase name}} screen</Text>
+        <View style={formStyle.cardFormContainer}>
+          {notification && (
+          <Message
+            {...notification}
+            testID="notificationView"
+            accessibilityLabel="notificationView"
+          />
+          )}
+        </View>
+      </View>
+    </ScrollView>
+
+    </SafeAreaView>
+    );
+};
+
+export default {{pascalCase name}}Screen;
+

@@ -1,0 +1,11 @@
+import { render } from '@testing-library/react-native';
+import {{pascalCase name}} from './{{pascalCase name}}';
+
+describe('{{pascalCase name}}', () => {
+it('matches the snapshot', () => {
+const tree = render(
+<{{pascalCase name}}/>
+  ).toJSON()
+  expect(tree).toMatchSnapshot()
+  })
+  })
